@@ -1,10 +1,10 @@
 # operaciones entre 2 num + - * /
 
-a = 458
-b = 569
-c = a + b
+a = input()
+b = input()
+#c = a + b
 # suma
-print(f' la suma es: %2d' %  (c))
+print(f' la suma es: {a + b}')
 
 # se usa la f para formatear sin necesidad de usar str o int
 
