@@ -1,20 +1,20 @@
 #pediremos 2 num por teclado
 
-num1 = float(input("ingresa un valor: "))
-num2 = float(input("ingresa el numero 2: "))
+A = None #int(input("Ingresa un valor: "))
+b = int(input("ingresa el numero 2: "))
 
-#suma
-suma_1 = num1 + num2
-print(suma_1)
-#resta
-resta_1 = num1 - num2
-print(resta_1)
-#mult
-mult_1 = num1 * num2
-print(mult_1)
-#div
-di_1 = num1 / num2
-print(di_1)
+print(A == b)
+print(A != b)
+print(A <= b)
+print(A < b)
+print(A > b)
+print(A >= b)
+print(A is b)
+print(A is not b)
 
-#print(f'la suma es {}, la resta{}, la mult es {}, la div es {}')
+print(bool(A))
+
+#(A = b) es una reasignación de variable, por eso marca error
+
+
 
