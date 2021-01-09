@@ -9,8 +9,8 @@ if a < b:
     print("El primero es menor")
     elif a > b: 
         print("el segundo es menor")
-else:
-    print("son iguales")
+else a == b:
+print("son iguales")
 
 
 
