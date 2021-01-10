@@ -3,10 +3,9 @@
 
 try:
     print("Buenas tardes, favor de introducir los campos requeridos: ")
-    print("Horas trabajadas?: ")
-    horas = int(input())
-    print("Pago por tiempo?: ")
-    pago = float(input())
+    
+    horas = float(input("Favor de colocar horas: "))
+    pago = float(input("Favor de colocar el precio de su trabajo: "))
 
     print("El pago por tu trabajo es de: ", horas * pago)
 
