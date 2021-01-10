@@ -1,17 +1,15 @@
 # nominas con def()
 
+def impuestos(pago):
+
+    return pago * 0.15
+
 def nomina(horas, pago):
-    horas = 20.0
-    pago = 12.0
 
-    nomina(horas * pago)
-    
-    print("El pago por tu trabajo es de: ", horas * pago)
+    bruto = horas * pago
+    imp = impuestos(bruto)
+    pago_neto = bruto - imp
 
-    def getTaxeRate()
+    print("El bruto es de: ", bruto, " y el neto es de: ", pago_neto)
 
-        return 0.15
-    
-    def getSalary():
-
-    
+nomina(23, 34)
