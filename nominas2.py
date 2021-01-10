@@ -6,15 +6,17 @@ def impuestos(pago):
 
 def nomina():
 
-    horas = float(imput("Dame horas: "))
+    horas = float(input("Dame horas: "))
     pago = float(input("Dame el costo: "))
     bruto = horas * pago
     imp = impuestos(bruto)
     pago_neto = bruto - imp
-
-if horas > 40:
-    extra_time = pago * 1.5
-    print("Bruto es de: ", bruto, "neto es de: ", )
-    print("El bruto es de: ", bruto, " y el neto es de: ", pago_neto)
+    
+    if horas > 40:
+        extra = horas - 40
+        extra_time = extra * pago * 1.5
+        print("bruto: ", bruto, "neto: ", pago_neto + extra_time)
+    else:
+        print("El bruto es de: ", bruto, " y el neto es de: ", pago_neto)
 
 nomina()
