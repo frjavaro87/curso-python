@@ -1,5 +1,6 @@
 # calificaciones con funciones
 
+
 def score(calif):
 
     if (calif >= 10.0 and calif != int and calif != float):
@@ -16,4 +17,4 @@ def score(calif):
         else:
             print("F")
 
-score(25)
+score(cosas)
