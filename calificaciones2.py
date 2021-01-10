@@ -2,7 +2,7 @@
 
 def score(calif):
 
-    if (calif >= 10.0 and calif <= 0.0):
+    if (calif >= 10.0):
         print("La calificación es errónea")
     else:
         if(calif >= 9):
@@ -16,4 +16,4 @@ def score(calif):
         else:
             print("F")
 
-score(7)
+score(8)
