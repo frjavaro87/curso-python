@@ -8,6 +8,7 @@ def nomina():
 
     horas = float(input("Dame horas: "))
     pago = float(input("Dame el costo: "))
+    # puede validarse de la entrada de las horas, es decir, el if
     bruto = horas * pago
     imp = impuestos(bruto)
     pago_neto = bruto - imp
