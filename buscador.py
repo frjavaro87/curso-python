@@ -1,14 +1,21 @@
 #búsqueda en textos
 
-# entrada de la palabra
-def palabra():
-    word = input("Qué palabra buscas?: ")
-palabra()
-#entrada del texto predeterminado
-def texto():
-    x = "En una ocasión tuve la oportunidad de hacer las cosas de manera diferente."
-texto()
 #definiendo la función de búsqueda
-def search(word, x):
-    for word in x
-        for 
+
+def busqueda(texto, keyword):
+
+    descompone = texto.split()
+    print(descompone)
+    #text.rstip(",.;:")
+    for palabra in descompone:
+        print(palabra)
+        if palabra == keyword:
+            print("alabra encontrdad")
+            break
+        else:
+            pass
+
+tex = input("Ingresa el texto a buscar: ")
+search = input("Ingresa tu palabra a buscar: ")
+
+busqueda(tex,search)
