@@ -1,9 +1,12 @@
 #búsqueda en textos
 #definiendo la función de búsqueda
 def busqueda(texto, keyword):
-    descompone = texto.split()      #descompongo el textoen forma de lista
+    descompone = texto.split()      #descompongo el texto en forma de lista
     print(descompone)
-    #text.rstip(",.;:")
+    a = texto.upper()
+    b = texto.lower()
+    print(a)
+    tex.rstrip(",.;:")
     for palabra in descompone:      #inicio el barrido de la palabra en la lista
         print(palabra)
         if palabra == keyword:      #comparo cada palabra con la palabra clave
