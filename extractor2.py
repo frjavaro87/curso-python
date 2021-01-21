@@ -2,10 +2,10 @@
 
 def extrae(texto):
 
-    b = texto.find(":")
-    print(b)             #regresa el valor de posición del caracter buscado
+    b = texto.find(":")             #regresa el valor de posición del caracter buscado
+    print(b)             
     if b >= 0:
-        c = texto[b: b + 1000]
+        c = texto[b:]
         c = c.strip(" ,;:.!?")  
         c = float(c)
         print(c)
