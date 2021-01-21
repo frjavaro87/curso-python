@@ -7,4 +7,3 @@ pandemicData = open(pandemicDatasource)
 print(pandemicData.readline())
 
 pandemicData.close()
-
