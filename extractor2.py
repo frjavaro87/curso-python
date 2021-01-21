@@ -5,7 +5,7 @@ def extrae(texto):
     b = texto.find(":")             #regresa el valor de posición del caracter buscado
     print(b)             
     if b >= 0:
-        c = texto[b:]
+        c = texto[b:b + 8]
         c = c.strip(" ,;:.!?")  
         c = float(c)
         print(c)
@@ -14,7 +14,7 @@ def extrae(texto):
 
     pandemiatext = "/home/francisco/Proyectos/Curso-python/curso-python/pandemia.txt"
     virus = open(pandemiatext)
-    print(virus.readlines())
+    print(virus.read())
     virus.close()
 
 extrae("virus")
