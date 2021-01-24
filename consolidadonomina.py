@@ -24,10 +24,10 @@ def nomina():
     if horas > 40:
         extra = horas - 40
         extra_time = extra * pago * 1.5
-        concatenado = "El salario de bruto de " + nombre + "quien trabajó el día: " + date + "trabajando: " + str(horas) + "es de: " + str(pago_neto)
+        concatenado = " El salario de bruto de " + nombre + " quien trabajó el día: " + date + " trabajando: " + str(extra_time) + " es de: " + str(pago_neto)
         write(concatenado)
     else:
-        concatenado = "El salario de bruto de " + nombre + "quien trabajó el día: " + date + "trabajando: " + str(horas) + "es de: " + str(pago_neto)
+        concatenado = " El salario de bruto de " + nombre + " quien trabajó el día: " + date + " trabajando: " + str(horas) + " es de: " + str(pago_neto)
         write(concatenado)
 nomina()
 
