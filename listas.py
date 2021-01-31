@@ -16,4 +16,4 @@ for palabra in descompone:
     else:
         listavacia.append(palabra)
 
-print(f'Se eencontraron palabras unicas', len(listavacia))
+print(f'Se encontraron palabras unicas', len(listavacia))
