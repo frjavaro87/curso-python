@@ -1,4 +1,3 @@
-import requests as req
 
 APIURL = "https://rickandmortyapi.com/api/character/1"
 
