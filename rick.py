@@ -1,4 +1,4 @@
-{"id":1,
+rick1 = {"id":1,
  "name":"Rick Sanchez",
  "status":"Alive",
  "species":"Human",
@@ -52,3 +52,6 @@
 "url":"https://rickandmortyapi.com/api/character/1",
 "created":"2017-11-04T18:48:46.250Z"
 }
+
+for text in rick1:
+    print(text)

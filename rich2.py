@@ -1,8 +1,10 @@
+""" se abre archivo"""
+
 rick = '/home/francisco/Proyectos/Curso-python/curso-python/rick.py'
+data = open(rick)
+rick2 = data.readlines()
 
-readrick = open(rick)
+""" creando diccinarios"""
 
-print(readrick.readlines())
-
-readrick.close()
-
+for text in rick2:
+    print(text)
