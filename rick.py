@@ -53,13 +53,18 @@ rick1 = {"id":1,
 "created":"2017-11-04T18:48:46.250Z"
 }
 
+id = []
 names = []
 status = []
 species = []
 gender = []
+origin = []
+location = []
 
 for text in rick1:
-    if text == 'name':
+    if text == 'id':
+        id.append(rick1[text])
+    elif text == 'name':
         names.append(rick1[text])
     elif text == 'status':
         status.append(rick1[text])
@@ -67,8 +72,15 @@ for text in rick1:
         species.append(rick1[text])
     elif text == 'gender':
         gender.append(rick1[text])
+    elif text == 'origin':
+        origin.append(rick1[text]['name'])
+    elif text == 'location':
+        location.append(rick1[text]['name'])
 
+print(id)
 print(names)
 print(status)
 print(species)
 print(gender)
+print(origin)
+print(location)
