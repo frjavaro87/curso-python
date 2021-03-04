@@ -9,23 +9,24 @@ gender = []
 origin = []
 location = []
 
-for data in rick_total:
-    if data == 'id':
-        id.append(rick_total[data]['info']['results']['id'])
-    elif data == 'name':
-        names.append(rick_total[data]['info']['results']['name'])
-    elif data == 'status':
-        status.append(rick_total[data]['info']['results']['status'])
-    elif data == 'species':
-        species.append(rick_total[data]['info']['results']['species'])
-    elif data == 'gender':
-        gender.append(rick_total[data]['info']['results']['gender'])
-    elif data == 'origin':
-        origin.append(rick_total[data]['info']['results']['origin'])
-    elif data == 'location':
-        location.append(rick_total[data]['info']['results']['location'])
+for data in rick_total['results']:
 
-contador+= 1
+    for text in data:
+        if text == 'id':
+            id.append(data['id'])
+        elif text == 'name':
+            names.append(data['name'])
+        elif text == 'status':
+            status.append(data['status'])
+        elif text == 'species':
+            species.append(data['species'])
+        elif text == 'gender':
+            gender.append(data['gender'])
+        elif text == 'origin':
+            origin.append(data['origin']['name'])
+        elif text == 'location':
+            location.append(data['name'])
+        contador+= 1
 
 print(id)
 print(names)
@@ -33,4 +34,8 @@ print(status)
 print(species)
 print(gender)
 print(origin)
-print(location) 
+print(location)
+
+#funcion que arme los array
+#otra que descomponga la lista y con un for me cuente los elementos de cada arreglo
+
