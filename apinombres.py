@@ -2,10 +2,12 @@
 
 import requests
 
-data = requests.get("https://rickandmortyapi.com/api/character")
+original = "https://rickandmortyapi.com/api/character/?name="
+
+nombre = input('Dame el nombre buscado: ')
+
+search = original + nombre
+
+data = requests.get(search)
 
 print(data.text)
-
-#nombre = input('Dame el nombre de un personaje de rick y morty:')
-
-
